@@ -1,10 +1,14 @@
-# paper cleaner
+# Paper Cleaner
 
 `papercleaner` makes a cleaned copy of a LaTeX paper. It removes comments from `.tex` files and deletes assets that no root document references.
 
-The runtime is Python 3.11+ with no third-party dependencies. Analysis is static and the tool does not run TeX.
-
 ## Install
+
+```bash
+pip install papercleaner
+```
+
+For development:
 
 ```powershell
 uv sync
@@ -13,9 +17,9 @@ uv sync
 ## Usage
 
 ```powershell
-uv run papercleaner .\paper
-uv run papercleaner .\paper -o .\paper-final
-uv run papercleaner .\paper.zip -d
+papercleaner .\paper
+papercleaner .\paper -o .\paper-final
+papercleaner .\paper.zip -d
 ```
 
 ```text
